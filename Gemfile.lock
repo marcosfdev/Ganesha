@@ -118,6 +118,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     activerecord-deprecated_finders (0.0.3)
+    addressable (2.3.5)
     arel (4.0.0.beta1)
     atomic (1.0.1)
     bcrypt-ruby (3.0.1)
@@ -135,6 +136,7 @@ GEM
     diff-lcs (1.2.1)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    excon (0.27.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (4.2.0)
@@ -162,6 +164,11 @@ GEM
       guard (>= 1.1)
       rspec (~> 2.11)
     hashie (1.2.0)
+    heroku (2.25.0)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.1)
+      rest-client (~> 1.6.1)
+      rubyzip
     hike (1.2.1)
     httpauth (0.2.0)
     i18n (0.6.4)
@@ -173,6 +180,8 @@ GEM
     json (1.7.7)
     jwt (0.1.7)
       multi_json (>= 1.5)
+    launchy (2.3.0)
+      addressable (~> 2.3)
     libv8 (3.11.8.13)
     listen (0.7.3)
     lumberjack (1.0.2)
@@ -180,6 +189,9 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.47)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     method_source (0.8.1)
     mime-types (1.21)
     minitest (4.6.2)
@@ -190,6 +202,7 @@ GEM
     moped (1.4.3)
     multi_json (1.6.1)
     multipart-post (1.2.0)
+    netrc (0.7.7)
     oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
@@ -234,6 +247,8 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -249,6 +264,7 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    rubyzip (1.0.0)
     sass (3.2.7)
     simplecov (0.7.1)
       multi_json (~> 1.0)
@@ -301,8 +317,10 @@ DEPENDENCIES
   font-awesome-sass-rails
   guard-rspec
   hashugar!
+  heroku
   jbuilder (~> 1.0.1)
   jquery-rails
+  mandrill-api
   mongoid!
   mongoid-rspec
   omniauth
