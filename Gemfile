@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", github: "rails/rails"
 gem "mongoid", github: "mongoid/mongoid"
+
 group :assets do
   gem "sprockets-rails", github: "rails/sprockets-rails"
   gem "sass-rails", github: "rails/sass-rails"
@@ -34,12 +35,8 @@ end
 group :production do
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-  gem 'pg'
   gem 'rails_12factor'
 end
-
-
-
 
 
 gem "jquery-rails"
