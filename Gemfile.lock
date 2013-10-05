@@ -5,6 +5,18 @@ GIT
     hashugar (0.0.6)
 
 GIT
+  remote: git://github.com/heroku/rails3_serve_static_assets.git
+  revision: 84910ceb4ca2851d650e66d3b22f5008acf253f8
+  specs:
+    rails3_serve_static_assets (0.0.1)
+
+GIT
+  remote: git://github.com/heroku/rails_log_stdout.git
+  revision: 01b5bcc572e3baed1618f4068920dd83bd491fb2
+  specs:
+    rails_log_stdout (0.0.1)
+
+GIT
   remote: git://github.com/mongoid/mongoid.git
   revision: 4d60824665ade2fb37e8ebca3585d0b959db04bc
   specs:
@@ -294,6 +306,8 @@ DEPENDENCIES
   pry
   quiet_assets
   rails!
+  rails3_serve_static_assets!
+  rails_log_stdout!
   rb-inotify (~> 0.9)
   rspec-rails
   sass-rails!
