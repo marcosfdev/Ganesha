@@ -38,7 +38,8 @@ group :production do
   gem 'rails_12factor'
 end
 
-
+gem 'mandrill-api'
+gem 'heroku'
 gem "jquery-rails"
 gem "turbolinks"
 gem "jbuilder", "~> 1.0.1"
