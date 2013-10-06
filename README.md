@@ -1,8 +1,6 @@
 # Ganesha
 ---
 
-== Ganesha
-
 Base app with Twitter, Facebook and New account login with Twitter Bootstrap for styling
 
 All options:
