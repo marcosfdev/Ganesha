@@ -1,6 +1,8 @@
 BootstrapApp::Application.routes.draw do
   
   
+  get "devise/new"
+  get "devise/create"
   authenticated :user do
     root :to => 'home#index'
   end

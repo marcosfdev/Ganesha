@@ -1,3 +1,9 @@
+<% content_for :stylesheets do %>
+  #header_id { display: none }
+<% end %>
+
+
+
 <h2>Sign up</h2>
 
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>

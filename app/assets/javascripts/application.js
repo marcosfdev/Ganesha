@@ -11,7 +11,24 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.min
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require_tree .
+//= require charts/sparkline/jquery.sparkline.min
+//= require app
+//= require app.plugin
+//= require app.data
+//= require slimscroll/jquery.slimscroll.min
+//= require libs/moment.min
+//= require charts/easypiechart/jquery.easy-pie-chart
+//= require calendar/bootstrap_calendar
+//= require calendar/demo
+//= require libs/jquery.pjax
+//= require fuelux/fuelux
+//= require fullcalendar/jquery-ui-1.10.2.custom.min
+//= require fullcalendar/jquery.ui.touch-punch.min
+//= require fullcalendar/fullcalendar.min
+//= require datepicker/bootstrap-datepicker
+//= require avatars_for_rails
+
