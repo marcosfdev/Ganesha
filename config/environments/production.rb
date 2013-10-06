@@ -12,8 +12,8 @@ config.action_mailer.smtp_settings = {
       :address => 'smtp.mandrillapp.com',
       :port => '587',
       :domain => 'http://vast-castle-8366.herokuapp.com/',
-      :user_name => ENV['MANDRILL_USERNAME'],
-      :password => ENV['MANDRILL_APIKEY']
+      :user_name => 'marcobrien12@gmail.com',
+      :password => 'Qb5tgQoitMn6GMjLuIHwBw'
     }
 
     ActionMailer::Base.delivery_method = :smtp
