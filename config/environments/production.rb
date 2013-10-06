@@ -12,8 +12,8 @@ ActionMailer::Base.smtp_settings = {
                     :address        => "smtp.mandrillapp.com",
                     :port           => 587,
                     :authentication => :plain,
-                    :user_name      => "MANDRILL_USERNAME:",
-                    :password       => "MANDRILL_APIKEY:"
+                    :user_name      => "marcobrien12@gmail.com",
+                    :password       => "Qb5tgQoitMn6GMjLuIHwBw"
 }
 
     ActionMailer::Base.delivery_method = :smtp
