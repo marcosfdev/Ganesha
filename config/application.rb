@@ -6,16 +6,6 @@ require 'action_mailer/railtie'
 #require 'rails/test_unit/railtie'
 require 'sprockets/railtie'
 
-config.action_mailer.smtp_settings = {
-      :address => 'smtp.mandrillapp.com',
-      :port => '587',
-      :domain => 'http://vast-castle-8366.herokuapp.com/',
-      :user_name => ENV['MANDRILL_USERNAME'],
-      :password => ENV['MANDRILL_APIKEY']
-    }
-
-    ActionMailer::Base.delivery_method = :smtp
-
 # Assets should be precompiled for production (so we don't need the gems loaded then)
 Bundler.require(*Rails.groups(assets: %w(development test)))
 
