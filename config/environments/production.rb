@@ -5,16 +5,16 @@ config.action_mailer.default_url_options = { :host => 'http://vast-castle-8366.h
 # Setup for production - deliveries, no errors raised
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
-config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default :charset => "utf-8"
 
-config.action_mailer.smtp_settings = {
-      :address => 'smtp.mandrillapp.com',
-      :port => '587',
-      :domain => 'http://vast-castle-8366.herokuapp.com/',
-      :user_name => 'marcobrien12@gmail.com',
-      :password => 'Qb5tgQoitMn6GMjLuIHwBw'
-    }
+ActionMailer::Base.smtp_settings = {
+                    :address        => "smtp.mandrillapp.com",
+                    :port           => 587,
+                    :authentication => :plain,
+                    :user_name      => "MANDRILL_USERNAME:",
+                    :password       => "MANDRILL_APIKEY:"
+}
 
     ActionMailer::Base.delivery_method = :smtp
 
