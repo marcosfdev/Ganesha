@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -11,9 +12,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-  end
-
-  def edit
   end
 
   def create
@@ -30,6 +28,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    layout "reg"
     authorize! :update, @user, :message => 'Not authorized as an administrator.'
     respond_to do |format|
 

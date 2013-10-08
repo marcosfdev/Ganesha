@@ -1,8 +1,7 @@
 BootstrapApp::Application.routes.draw do
   
-  
-  get "devise/new"
-  get "devise/create"
+  get "splash/index"
+
   authenticated :user do
     root :to => 'home#index'
   end
@@ -16,6 +15,7 @@ BootstrapApp::Application.routes.draw do
   resources :users
   root :to => "home#index"
   get "home/index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

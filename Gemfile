@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 gem "rails", github: "rails/rails"
 gem "mongoid", github: "mongoid/mongoid"
+gem "font-awesome-rails"
+gem 'font-awesome-sass-rails'
 
 group :assets do
   gem "sprockets-rails", github: "rails/sprockets-rails"
@@ -22,6 +24,7 @@ group :development, :test do
   gem "zeus"
   gem "rspec-rails"
   gem "factory_girl_rails"
+  gem "mailcatcher"
 end
 
 group :test do
@@ -41,7 +44,6 @@ end
 gem 'mandrill-api'
 gem 'heroku'
 gem "jquery-rails"
-gem "turbolinks"
 gem "jbuilder", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.3.0.1"
 gem "font-awesome-sass-rails"

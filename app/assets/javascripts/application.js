@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery.min
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
 //= require charts/sparkline/jquery.sparkline.min
 //= require app
@@ -30,5 +29,4 @@
 //= require fullcalendar/jquery.ui.touch-punch.min
 //= require fullcalendar/fullcalendar.min
 //= require datepicker/bootstrap-datepicker
-//= require avatars_for_rails
 

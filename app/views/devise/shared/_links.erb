@@ -1,5 +1,5 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to "Sign in", new_session_path(resource_name) %><br />
+  <%= link_to "Sign in", new_session_path(resource_name), :class => 'btn btn-white btn-block'  %><br />
 <% end -%>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
@@ -19,7 +19,9 @@
 <% end -%>
 
 <%- if devise_mapping.omniauthable? %>
-  <%- resource_class.omniauth_providers.each do |provider| %>
-    <%= link_to "Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider) %><br />
-  <% end -%>
+   <div class="line line-dashed"></div>
+      <%= link_to '<i class="icon-facebook pull-left"></i> Sign in with Facebook'.html_safe, user_omniauth_authorize_path(:facebook), class: 'btn btn-facebook btn-block m-b-sm' %>
+
+   <%= link_to '<i class="icon-twitter pull-left"></i> Sign in with Twitter'.html_safe, user_omniauth_authorize_path(:twitter), class: 'btn btn-twitter btn-block' %>  
+   <div class="line line-dashed"></div>
 <% end -%>

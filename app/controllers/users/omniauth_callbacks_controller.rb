@@ -1,5 +1,5 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
-
+  layout "reg"
   def all
     identity = Identity.from_omniauth(request.env["omniauth.auth"])
     user = identity.find_or_create_user(current_user)
@@ -10,6 +10,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     else
       sign_in user
       redirect_to edit_user_registration_url
+      layout "reg"
     end
   end
 
